@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>العنوان الجديد | دعوة افتتاح مركز مدى</title>
+  <meta name="description" content="دعوة رقمية عربية لافتتاح مركز مدى — مركز طبي.">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta property="og:title" content="وصلنا إلى عنواننا الجديد — مركز مدى"><meta property="og:description" content="رعاية أقرب، ومساحة صُممت لراحتكم"><meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <script defer src="script.js"></script>
+</head>
+<body class="template-op3">
+<a class="skip" href="#details">انتقل إلى التفاصيل</a>
+<header class="topbar"><a class="brand-mark" href="#top" aria-label="العودة إلى البداية">OP3</a><span>العنوان الجديد</span><span class="live-dot">دعوة رقمية</span></header>
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-bind="businessType"></p>
+        <div class="signature"><div class="route" aria-hidden="true"><svg viewBox="0 0 900 320"><path class="route-line" d="M45 270 C155 50 285 295 390 145 S615 8 700 150 S825 260 865 65"/><circle class="route-dot" cx="45" cy="270" r="10"/><g class="pin" transform="translate(865 65)"><path d="M0-26c-18 0-30 13-30 29 0 23 30 51 30 51S30 26 30 3C30-13 18-26 0-26Z"/><circle r="8"/></g></svg><div class="route-labels"><span>المدينة</span><span>الشارع</span><strong>وصلنا</strong></div></div></div>
+        <p class="opening-title" data-bind="openingTitle"></p>
+        <h1 id="hero-title" data-bind="businessName"></h1>
+        <p class="tagline" data-bind="tagline"></p>
+        <p class="guest" data-guest hidden></p>
+      </div>
+      
+    </div>
+    <a class="scroll-cue" href="#countdown" aria-label="الانتقال إلى العد التنازلي"><span></span>اكتشف الموعد</a>
+  </section>
+
+  <section id="countdown" class="countdown-section reveal" aria-labelledby="count-title">
+    <p class="section-index">01 / الموعد</p><h2 id="count-title">لحظة الافتتاح تقترب</h2>
+    <div class="countdown" role="timer" aria-live="polite">
+      <div><strong data-unit="days">00</strong><span>يوم</span></div><div><strong data-unit="hours">00</strong><span>ساعة</span></div><div><strong data-unit="minutes">00</strong><span>دقيقة</span></div><div><strong data-unit="seconds">00</strong><span>ثانية</span></div>
+    </div>
+    <p class="count-status" data-count-status>نترقّب حضوركم</p>
+  </section>
+
+  <section id="details" class="details reveal" aria-labelledby="details-title">
+    <div><p class="section-index">02 / التفاصيل</p><h2 id="details-title" data-bind="openingTitle"></h2><p class="detail-lead" data-bind="tagline"></p></div>
+    <dl class="detail-list"><div><dt>التاريخ</dt><dd data-date></dd></div><div><dt>الوقت</dt><dd data-time></dd></div><div><dt>المكان</dt><dd data-bind="venue"></dd></div><div><dt>العنوان</dt><dd><span data-bind="address"></span>، <span data-bind="city"></span></dd></div></dl>
+  </section>
+
+  <section class="place reveal" aria-labelledby="place-title"><div><p class="section-index">03 / الوصول</p><h2 id="place-title">موعدنا في <span data-bind="city"></span></h2><p><span data-bind="venue"></span><br><span data-bind="address"></span></p></div><div class="actions"><a class="button primary" data-maps target="_blank" rel="noopener" aria-label="فتح الموقع في خرائط Google">افتح الموقع</a><button class="button" data-calendar type="button" aria-label="إضافة موعد الافتتاح إلى التقويم">أضف إلى التقويم</button><button class="button" data-share type="button" aria-label="مشاركة دعوة الافتتاح">شارك الدعوة</button></div></section>
+  <section class="closing reveal"><span class="closing-line"></span><p>حضوركم هو البداية الأجمل</p><strong data-bind="businessName"></strong></section>
+</main>
+<footer><span data-bind="businessName"></span><span data-year></span></footer>
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+</body></html>
